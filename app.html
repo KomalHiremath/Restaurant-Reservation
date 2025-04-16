@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRCode Generator and Scanner</title>
+    <link rel="stylesheet" href="styles3.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="generator">
+            <h2>Enter the Total Amount</h2>
+            <input type="text" id="qrText" placeholder="Enter the amount">
+            <button id="generateBtn">Generate QR Code</button>
+            <div id="qrcode"></div>
+            <a href="#" download="qrcode.png" id="downloadBtn">Download QR Code</a>
+        </div>
+        <div class="scanner">
+            <h2>Scan Your QR Code</h2>
+            <button id="StartScanBtn">Start Scanning</button>
+            <video id="qrVideo" autoplay playinline></video>
+            <div id="scanResult"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
